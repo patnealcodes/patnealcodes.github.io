@@ -19,6 +19,10 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      fontFamily: {
+        sans: ['var(--font-dank)'], // sans-sans
+        mono: ['var(--font-dank)'],
+      },
       fontSize: {
         '5xl': '2.5rem',
         '6xl': '2.75rem',

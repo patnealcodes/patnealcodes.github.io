@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import { HOME_OG_IMAGE_URL } from '../lib/constants'
 
 const Meta = () => {
   return (
@@ -25,16 +25,17 @@ const Meta = () => {
       <link
         rel="mask-icon"
         href="/favicon/safari-pinned-tab.svg"
-        color="#000000"
+        color="#23262D"
       />
-      <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <meta name="msapplication-TileColor" content="#000000" />
+      <link rel="shortcut icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light.ico" />
+      <link rel="shortcut icon" media="(prefers-color-scheme: dark)" href="/favicon/favicon-dark.ico" />
+      <meta name="msapplication-TileColor" content="#23262D" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-      <meta name="theme-color" content="#000" />
+      <meta name="theme-color" content="#23262D" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={`The portfolio resume of Software Engineer, Force Multiplier, Problem Solver and Mentor Pat Neal`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
