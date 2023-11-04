@@ -35,7 +35,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`The portfolio resume of Software Engineer, Force Multiplier, Problem Solver and Mentor Pat Neal`}
+        content={`Pat Neal dot Codes | Software Engineer, Force Multiplier, Problem Solver and Mentor Pat Neal`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
