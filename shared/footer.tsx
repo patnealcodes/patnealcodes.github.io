@@ -1,10 +1,10 @@
-import Container from './container'
+import Container from 'shared/container'
 
 const Footer = () => {
   return (
     <footer className="bg-neutral-50 border-t border-neutral-200">
       <Container>
-        Links and stuff
+        Socials and stuff
       </Container>
     </footer>
   )

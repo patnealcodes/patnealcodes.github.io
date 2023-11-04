@@ -1,16 +1,13 @@
-import { useRouter } from 'next/router'
+import type PostType from 'interfaces/post'
+import { getAllPosts, getPostBySlug } from 'lib/api'
+import { CMS_NAME } from 'lib/constants'
+import markdownToHtml from 'lib/markdownToHtml'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
-import type PostType from '../../interfaces/post'
+import { useRouter } from 'next/router'
+import Container from 'shared/container'
+import Header from 'shared/header'
+import Layout from 'shared/layout'
 
 type Props = {
   post: PostType
@@ -29,7 +26,7 @@ export default function Post({ post, morePosts, preview }: Props) {
       <Container>
         <Header />
         {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
+          <div>Loading…</div>
         ) : (
           <>
             <article className="mb-32">
@@ -37,13 +34,11 @@ export default function Post({ post, morePosts, preview }: Props) {
                 <title>{title}</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
-              <PostBody content={post.content} />
+              <div>{post.title}</div>
+              <div>{post.coverImage}</div>
+              <div>{post.date}</div>
+              <div>{post.author.name}</div>
+              <p>{post.content}</p>
             </article>
           </>
         )}

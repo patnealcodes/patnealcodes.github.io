@@ -1,6 +1,6 @@
-import PreviewAlert from './preview-alert'
-import Footer from './footer'
-import Meta from './meta'
+import Footer from 'shared/footer'
+import Meta from 'shared/meta'
+import PreviewAlert from 'shared/preview-alert'
 
 type Props = {
   preview?: boolean
