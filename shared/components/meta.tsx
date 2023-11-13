@@ -25,13 +25,13 @@ const Meta = () => {
       <link
         rel="mask-icon"
         href="/favicon/safari-pinned-tab.svg"
-        color="#23262D"
+        color="##42b883"
       />
       <link rel="shortcut icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light.ico" />
       <link rel="shortcut icon" media="(prefers-color-scheme: dark)" href="/favicon/favicon-dark.ico" />
       <meta name="msapplication-TileColor" content="#23262D" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-      <meta name="theme-color" content="#23262D" />
+      <meta name="theme-color" content="#42b883" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"

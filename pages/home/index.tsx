@@ -7,9 +7,9 @@ import Intro from 'pages/home/components/intro'
 import Projects from 'pages/home/components/projects'
 import Services from 'pages/home/components/services'
 import Testimonials from 'pages/home/components/testimonials'
-import Container from 'shared/container'
-import Footer from 'shared/footer'
-import Layout from 'shared/layout'
+import Container from 'shared/components/container'
+import Footer from 'shared/components/footer'
+import Layout from 'shared/components/layout'
 
 type Props = {
   allPosts: Post[]
@@ -29,7 +29,6 @@ export default function Index({ allPosts }: Props) {
           <Projects />
           <Testimonials />
           <Blog />
-          <Footer />
         </Container>
       </Layout>
     </>

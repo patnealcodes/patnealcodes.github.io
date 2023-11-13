@@ -1,13 +1,13 @@
-import Container from "shared/container";
+import {Section} from "shared/components";
 
 type Props = {
   preview?: boolean;
 };
 
 const PreviewAlert = () => (
-  <div className="border-b bg-neutral-800 border-neutral-800 text-white">
-    <Container>
-      <div className="py-2 text-center text-sm">
+  <div className="text-white border-b bg-neutral-800 border-neutral-800">
+    <Section>
+      <div className="py-2 text-sm text-center">
         <>
           This page is a preview.{" "}
           <a
@@ -19,7 +19,7 @@ const PreviewAlert = () => (
           to exit preview mode.
         </>
       </div>
-    </Container>
+    </Section>
   </div>
 )
 

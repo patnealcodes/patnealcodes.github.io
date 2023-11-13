@@ -1,7 +1,7 @@
 import localFont from '@next/font/local'
 import { AppProps } from 'next/app'
 
-import 'styles/index.css'
+import 'styles/index.scss'
 
 const dank = localFont({
   src: [

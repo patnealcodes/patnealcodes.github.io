@@ -1,0 +1,21 @@
+h1 { @apply font-black leading-tight mb-6 text-[32px]; }
+h2 { @apply text-2xl font-thin }
+h1, h2 { @apply mb-6 }
+
+a {
+  @apply text-lg transition-colors ease-in;
+
+  &:hover {
+    @apply text-theme-green;
+  }
+}
+p {
+  @apply text-xl;
+}
+button {
+  @apply rounded-full border-2 border-theme-green px-4 py-1 text-lg text-theme-green transition-colors;
+
+  &:hover {
+    @apply text-white bg-theme-green;
+  }
+}

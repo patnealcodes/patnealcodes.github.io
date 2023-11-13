@@ -1,7 +1,6 @@
 # coming soon
 
-<img src="public/assets//me-silhouette-black.png#gh-light-mode-only" alt="pat neal" width="150px">
-<img src="public/assets//me-silhouette.png#gh-dark-mode-only" alt="pat neal" width="150px">
+<img src="public/assets/pncodes-logo-color.png" alt="pat neal" width="150px">
 
 `pat neal's patneal.codes code`
 

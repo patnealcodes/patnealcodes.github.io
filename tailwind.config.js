@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  content: ['./shared/**/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {
       colors: {
-        'light-1': '#FAFAFA',
-        'dark-1': '#262626',
+        'theme-green': '#42b883',
       },
       spacing: {
         28: '7rem',

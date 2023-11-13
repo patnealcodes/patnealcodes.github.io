@@ -1,6 +1,4 @@
-import Footer from 'shared/footer'
-import Meta from 'shared/meta'
-import PreviewAlert from 'shared/preview-alert'
+import {Meta, Header, PreviewAlert, Footer} from 'shared/components'
 
 type Props = {
   preview?: boolean
@@ -11,6 +9,7 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
       <Meta />
+      <Header />
       <div className="min-h-screen">
         {preview && <PreviewAlert /> }
         <main>{children}</main>
