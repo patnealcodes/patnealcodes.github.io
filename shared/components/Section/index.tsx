@@ -1,4 +1,4 @@
-import Container from "shared/components/container";
+import {Container} from "shared/components";
 
 type Props = {
   children?: React.ReactNode;

@@ -29,7 +29,7 @@ const Meta = () => {
       />
       <link rel="shortcut icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light.ico" />
       <link rel="shortcut icon" media="(prefers-color-scheme: dark)" href="/favicon/favicon-dark.ico" />
-      <meta name="msapplication-TileColor" content="#23262D" />
+      <meta name="msapplication-TileColor" content="#22262D" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#42b883" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
