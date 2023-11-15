@@ -1,13 +1,13 @@
+@import 'shared/mixins.css';
+
 h1 { @apply font-black leading-tight mb-6 text-[32px]; }
 h2 { @apply text-2xl font-thin }
 h1, h2 { @apply mb-6 }
 
 a {
-  @apply text-lg transition-colors ease-in;
-
-  &:hover {
-    @apply text-theme-green;
-  }
+  @apply text-lg theme-mask;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 p {
   @apply text-xl;

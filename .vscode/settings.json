@@ -19,6 +19,5 @@
         "titleBar.inactiveForeground": "#15202b99"
     },
     "peacock.color": "#42b883",
-    "files.associations": { "*.scss": "tailwindcss" },
-    "scss.validate": false
+    "files.associations": { "*.css": "tailwindcss" },
 }

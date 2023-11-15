@@ -2,7 +2,7 @@ import localFont from "@next/font/local";
 import clsx from "clsx";
 import { AppProps } from "next/app";
 
-import "styles/index.scss";
+import "styles/index.css";
 
 const dank = localFont({
   src: [

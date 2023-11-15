@@ -1,0 +1,17 @@
+@layer utilities {
+  .theme-mask {
+    background-image: linear-gradient(
+      to bottom,
+      theme('colors.theme-dark') 0%,
+      theme('colors.theme-dark') 50%,
+      theme('colors.theme-green') 50%,
+      theme('colors.theme-green') 100%
+    );
+    background-size: 100% 200%;
+    transition: .3s all;
+  
+    &:hover {
+      background-position: 0 100%;
+    }
+  }
+}

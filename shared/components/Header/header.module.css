@@ -1,0 +1,5 @@
+.pnCodesLogo {
+  @apply h-10 w-12 bg-gray-800 cursor-pointer theme-mask;
+  mask-image: url('/assets/pncodes-logo.svg');
+  mask-clip: fill-box;
+}
