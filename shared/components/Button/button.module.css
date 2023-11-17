@@ -1,0 +1,12 @@
+.themeButton {
+  @apply rounded-full border-2 px-4 py-1 theme-mask-i;
+
+  &:hover .themeButtonText {
+    background-position: 0 100%;
+  }
+}
+.themeButtonText {
+  @apply text-lg theme-mask;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

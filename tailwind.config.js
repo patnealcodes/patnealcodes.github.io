@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ['./shared/**/*.tsx', './pages/**/*.tsx'],
   theme: {
@@ -32,5 +34,34 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({addComponents, theme}) => {
+      addComponents({
+        '.theme-mask': {
+          'background-color': theme('colors.theme-green'),
+          'background-image': `radial-gradient(circle at center,${theme('colors.theme-dark')} 0%,${theme('colors.theme-dark')} 33%,transparent 33%)`,
+          'background-repeat': 'no-repeat',
+          'background-size': '300% 300%',
+          'background-position': '50% 50%',
+          'transition': '.3s all',
+        
+          '&:hover': {
+            'background-position': '100% 0'
+          }
+        },
+        '.theme-mask-i': {
+          'background-color': theme('colors.theme-dark'),
+          'background-image': `radial-gradient(circle at center,${theme('colors.theme-green')} 0%,${theme('colors.theme-green')} 33%,transparent 33%)`,
+          'background-repeat': 'no-repeat',
+          'background-size': '300% 300%',
+          'background-position': '50% 50%',
+          'transition': '.3s all',
+        
+          '&:hover': {
+            'background-position': '100% 0'
+          }
+        }
+      })
+    })
+  ],
 }
