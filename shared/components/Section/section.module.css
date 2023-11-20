@@ -1,0 +1,12 @@
+/* Can definitely refactor this to make it more dry, but I'm tired so I'll leave that as a TODO */
+.lightSection {
+  @apply text-theme-dark bg-theme-light;
+  --section-bg: theme('colors.theme-light');
+  --section-text: theme('colors.theme-dark')
+}
+
+.darkSection {
+  @apply text-theme-light bg-theme-dark;
+  --section-bg: theme('colors.theme-dark');
+  --section-text: theme('colors.theme-light')
+}

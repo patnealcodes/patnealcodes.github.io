@@ -15,7 +15,7 @@ const dank = localFont({
       weight: "700",
     },
     {
-      path: "../public/fonts/DankMono-Bold.ttf",
+      path: "../public/fonts/DankMono-Italic.ttf",
       style: "italics",
     },
   ],

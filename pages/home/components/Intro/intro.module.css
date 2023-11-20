@@ -1,0 +1,60 @@
+.introPhotoContainer {
+  @apply relative text-[10px];
+
+  &:before {
+    @apply absolute rounded-l-full overflow-x-hidden rotate-45 z-10;
+    background-color: var(--section-bg);
+    box-shadow: 1em 0 1em -1.25em black;
+    position: absolute;
+    height: 10em;
+    width: 4em;
+    content: ' ';
+    left: -1em;
+    top: -4em;
+  }
+}
+
+.introPhoto {
+  @apply bg-white relative;
+  background-image: linear-gradient(-45deg, rgba(0,0,0,.02) 50%, rgba(0,0,0,.04));
+  width: 36em;
+  padding: 2em;
+  padding-bottom: 8em;
+  box-shadow:
+    0 0 .05em .1em rgba(0,0,0,.1),
+    .25em .25em .25em rgba(0,0,0,.1);
+
+  img {
+    @apply w-full;
+  }
+
+  &:before {
+    @apply absolute block w-full rotate-3 scale-90 -z-10;
+    bottom: 2%;
+    box-shadow: 1em 1em 2em rgba(0,0,0,.25);
+    content: ' ';
+    height: 10%;
+    right: 2%;
+    width: 100%;
+  }
+  &:after {
+    @apply absolute block w-full rotate-3 scale-90 -z-10;
+    box-shadow: 1em 1em 1em rgba(0,0,0,.25);
+    content: ' ';
+    width: 10%;
+    height: 100%;
+    bottom: 2%;
+    right: 2%;
+  }
+}
+
+.photoWriting {
+  @apply absolute left-1/2;
+  margin: 0 0 0 -2.5em;
+  width: 5em;
+  bottom: 2em;
+
+  image {
+    @apply w-full;
+  }
+}

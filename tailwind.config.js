@@ -5,9 +5,12 @@ module.exports = {
   content: ['./shared/**/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {
+      darkMode: 'class',
       colors: {
-        'theme-dark': '#22262D',
         'theme-green': '#42b883',
+        'theme-dark': '#0F172A',
+        'theme-light': '#F5F5FB',
+        'theme-text': '#E2E8F0'
       },
       spacing: {
         28: '7rem',
@@ -31,6 +34,7 @@ module.exports = {
       boxShadow: {
         sm: '0 5px 10px rgba(0, 0, 0, 0.12)',
         md: '0 8px 30px rgba(0, 0, 0, 0.12)',
+        nice: '0px 7px 29px 0px rgba(0, 0, 0, 0.35)'
       },
     },
   },

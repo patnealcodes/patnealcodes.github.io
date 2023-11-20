@@ -18,7 +18,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Portfolio Resume of Pat Neal | Software Engineer, Force Multiplier, Problem Solver and Mentor</title>
+          <title>Portfolio Resume of Pat Neal | Software Engineer, Problem Solver, Force Multiplier and Mentor</title>
         </Head>
         <Container>
           <Intro />
