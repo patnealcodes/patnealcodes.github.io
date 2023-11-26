@@ -1,8 +1,10 @@
+import { Section } from "shared/components"
+
 const About = () => {
   return (
-    <section>
+    <Section theme="accent">
       <h1>Hi. I'm Pat Neal. I Codes.</h1>
-    </section>
+    </Section>
   )
 }
 

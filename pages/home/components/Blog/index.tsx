@@ -1,8 +1,10 @@
+import { Section } from "shared/components"
+
 const Blog = () => {
   return (
-    <section>
+    <Section>
       <h1>My Musings</h1>
-    </section>
+    </Section>
   )
 }
 
